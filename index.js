@@ -96,17 +96,29 @@ bmiCalculator(80, 190);
 function isLeap(year) {
 
     if (year % 4 === 0) {
-        if (year% 100 === 0 ) {
-            if (year % 400 ===0) {
-                return "leap year";
-    } else {
-        return "not leap year";
-    }
-        }    else {
-        return "leap year.";
+        if (year % 100 === 0 ) {
+            if (year % 400 === 0) {
+                return "Leap year.";
+            } else {
+                return "Not leap year.";
+            }
+        }  else {
+            return "Leap year.";
         }
     } else {
-        return "not leap year.";
+        return "Not leap year.";
     }
 }
+
 isLeap(2400);
+
+
+
+
+var guestList = ["ay", "ba", "ka", "la"];
+var guestName = prompt("What is your name?");
+if(guestList.includes(guestName)) {
+        alert("Welcome!");
+} else {
+    alert("Sorry,maybe next time.");
+}
